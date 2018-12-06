@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Friend Me</title>
+</head>
+
+<style>
+    body {
+    background-color: #333;
+    color: white;
+}
+
+#links{
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+hr {
+    background-color: white;
+    margin: 20px;
+    
+}
+
+.form-row {
+ margin-left: 20px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.agree {
+text-align: end;
+font-size: 14px;
+}
+
+.disagree {
+font-size: 14px;
+margin-bottom: 15px;
+}
+
+.submit {
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#modal {
+    color: #333;
+}
+
+</style>
+
+<body>
+    <h1>Answer for <i class="fas fa-cocktail"></i></h1>
+    <h1>Perfect Match</h1>
+
+    <hr>
+
+    <!-- survey questions -->
+
+    <form id="#myform">
+        <div class="form-row">
+
+            <div class="col-11">
+                <input type="text" class="form-control" placeholder="Name (required)" id="name">
+            </div>
+            <div class="col-11">
+                <input type="text" class="form-control" placeholder="Link to photo image (required)" id="img-url">
+            </div>
+
+            <!-- question 1 -->
+            <label class="col-11" for="question1">1. I disagree with a lot of people.</label>
+            <div class="agree col-2">Strongly agree</div>
+            <div class="col-7">
+                <input type="range" class="custom-range" min="1" max="5" id="question1">
+            </div>
+            <div class="disagree col-2">Strongly disagree</div>
+
+            <!-- question 2 -->
+            <label class="col-11" for="question2">2. I don't mind being at the center of attention.</label>
+            <div class="agree col-2">Strongly agree</div>
+            <div class="col-7">
+                <input type="range" class="custom-range" min="1" max="5" id="question2">
+            </div>
+            <div class="disagree col-2">Strongly disagree</div>
+
+            <!-- question 3 -->
+            <label class="col-11" for="question3">3. I like to stay up late all night.</label>
+            <div class="agree col-2">Strongly agree</div>
+            <div class="col-7">
+                <input type="range" class="custom-range" min="1" max="5" id="question3">
+            </div>
+            <div class="disagree col-2">Strongly disagree</div>
+
+            <!-- question 4 -->
+            <label class="col-11" for="question4">4. Vegetables are so gross.</label>
+            <div class="agree col-2">Strongly agree</div>
+            <div class="col-7">
+                <input type="range" class="custom-range" min="1" max="5" id="question4">
+            </div>
+            <div class="disagree col-2">Strongly disagree</div>
+
+            <!-- question 5 -->
+            <label class="col-11" for="question5">5. I binge watch shows on netflix at least once a week.</label>
+            <div class="agree col-2">Strongly agree</div>
+            <div class="col-7">
+                <input type="range" class="custom-range" min="1" max="5" id="question5">
+            </div>
+            <div class="disagree col-2">Strongly disagree</div>
+
+            <!-- question 6 -->
+            <label class="col-11" for="question6">6. I try to take showers daily.</label>
+            <div class="agree col-2">Strongly agree</div>
+            <div class="col-7">
+                <input type="range" class="custom-range" min="1" max="5" id="question6">
+            </div>
+            <div class="disagree col-2">Strongly disagree</div>
+
+            <!-- question 7 -->
+            <label class="col-11" for="question7">7. I call myself the number one baseball fan.</label>
+            <div class="agree col-2">Strongly agree</div>
+            <div class="col-7">
+                <input type="range" class="custom-range" min="1" max="5" id="question7">
+            </div>
+            <div class="disagree col-2">Strongly disagree</div>
+
+            <!-- question 8 -->
+            <label class="col-11" for="question8">8. My children are important to me.</label>
+            <div class="agree col-2">Strongly agree</div>
+            <div class="col-7">
+                <input type="range" class="custom-range" min="1" max="5" id="question8">
+            </div>
+            <div class="disagree col-2">Strongly disagree</div>
+
+            <!-- question 9 -->
+            <label class="col-11" for="question9">9. I love pizzaaaaaaaaaaaaaaaaa.</label>
+            <div class="agree col-2">Strongly agree</div>
+            <div class="col-7">
+                <input type="range" class="custom-range" min="1" max="5" id="question9">
+            </div>
+            <div class="disagree col-2">Strongly disagree</div>
+
+            <!-- question 10 -->
+            <label class="col-11" for="question10">10. My favorite song is "Total Eclipse of the Heart" by Bonnie
+                Tyler.</label>
+            <div class="agree col-2">Strongly agree</div>
+            <div class="col-7">
+                <input type="range" class="custom-range" min="1" max="5" id="question10">
+            </div>
+            <div class="disagree col-2">Strongly disagree</div>
+        </div>
+
+        <div class="col-9">
+            <button type="button" class="submit btn btn-primary btn-lg form-control" data-toggle="modal" data-target="#modal"
+                id="submission">
+                <span class="glyphicon glyphicon-ok"></span>
+                SUBMIT SURVEY
+            </button>
+        </div>
+    </form>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">You perfect match:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links -->
+    <p id="links"><a href="/api/friends">API Friends List</a> | <a href="https://github.com/nataliakukula/FriendMe">GitHub
+            Repo</a></p>
+</body>
+
+</html>
+
+<!-- Sending form data to the server -->
+<script type="text/javascript">
+
+    // let currentLocation = window.location.origin; 
+    // Should the page reload?
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+
+        let scores = [];
+
+        let friend = {
+            name: $("#name").val().trim(),
+            photo: $("#img-url").val().trim(),
+            score: scores
+        };
+
+        for (let i = 1; i <= 10; i++) {
+            let questionScore = Number($("#question" + i).val());
+            scores.push(questionScore);
+        };
+
+        // console.log(friend);
+
+        $.post("/api/friends", friend,
+            function (data) {
+
+                console.log("frontend data:", data);
+                console.log('photo: ', data.photo);
+
+
+                $('.modal-header').html("<h3> Your best match is: " + data.name + "</h3>");
+                $('.modal-body').html("<img class='img-responsive center-block' style='width:100%;' src=" + data.photo + ">");
+                $('#myModal').modal('show');
+            });
+
+        $("#name").val("");
+        $("#img-url").val("");
+        $("#question1").val("");
+        $("#question2").val("");
+        $("#question3").val("");
+        $("#question4").val("");
+        $("#question5").val("");
+        $("#question6").val("");
+        $("#question7").val("");
+        $("#question8").val("");
+        $("#question9").val("");
+        $("#question10").val("");
+
+    });
+
+</script>

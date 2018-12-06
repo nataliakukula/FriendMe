@@ -1,0 +1,25 @@
+{
+  "name": "FriendMe",
+  "version": "1.0.0",
+  "description": "Full stack dating site, a \"friend finder\".",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nataliakukula/FriendMe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nataliakukula/FriendMe/issues"
+  },
+  "homepage": "https://github.com/nataliakukula/FriendMe#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
