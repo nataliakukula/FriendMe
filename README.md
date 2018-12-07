@@ -6,7 +6,7 @@
 **Runtime:** Node.js\
 **Built with:** HTML5, Javascript \
 **NPM:** Express, Path \
-**Deployed on Heroku:** "Coming soon"
+**Deployed on Heroku:** https://pure-eyrie-99324.herokuapp.com/
 
 
 ## Summary
